@@ -1,11 +1,16 @@
 #include <stdio.h>
+#include <stdlib.h>
 #include <tensorflow/c/c_api.h>
 
 int main() {
-  printf("Hello from TensorFlow C library version %s\n", TF_Version());
-  return 0;
+
+    //const char *tf_version = TF_Version();
+
+    printf("Hello from TensorFlow C library version %s\n", TF_Version());
+    //printf("Hello from TensorFlow C library version %s\n", tf_version);
+    //printf("Hello from TensorFlow C library version\n");
+    
+    //free((void *)tf_version);
+    
+    return 0;
 }
-
-// give the error :
-// W tensorflow/stream_executor/platform/default/dso_loader.cc:64] Could not load dynamic library 'libcudart.so.11.0'; dlerror: libcudart.so.11.0: cannot open shared object file: No such file or directory
-

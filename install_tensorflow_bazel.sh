@@ -23,4 +23,4 @@ else
     echo "Please, run 'git clone https://github.com/tensorflow/tensorflow' and 'bazel build --jobs=2 //tensorflow/tools/lib_package:libtensorflow' in the tensorflow dir and rerun the script."
 fi
 
-
+# here were still some issues but installing tensorflow with install_tensorflow.sh seemed to solve it...
